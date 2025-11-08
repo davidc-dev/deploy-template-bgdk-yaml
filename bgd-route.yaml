@@ -3,7 +3,7 @@ kind: Route
 metadata:
   creationTimestamp: null
   labels:
-    app: bgd
+    app: {{DEVICE_NAME}}-{{DEVICE_ID}}-configmap-app
   name: {{DEVICE_NAME}}-{{DEVICE_ID}}-route
   namespace: device-apps
 spec:
