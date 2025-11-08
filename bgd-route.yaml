@@ -7,7 +7,7 @@ metadata:
   name: {{DEVICE_NAME}}-{{DEVICE_ID}}-route
   namespace: device-apps
 spec:
-  host: ""
+  host: "{{DEVICE_NAME}}-{{DEVICE_ID}}.apps.{{CLUSTER_FQDN}}"
   port:
     targetPort: 8080
   tls:
