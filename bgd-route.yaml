@@ -10,6 +10,10 @@ spec:
   host: ""
   port:
     targetPort: 8080
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+  wildcardPolicy: None
   to:
     kind: Service
     name: bgd
