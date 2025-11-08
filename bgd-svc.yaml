@@ -4,7 +4,7 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: bgd
+    app: {{DEVICE_NAME}}-{{DEVICE_ID}}-app
   name: {{DEVICE_NAME}}-{{DEVICE_ID}}-service
   namespace: device-apps
 spec:
