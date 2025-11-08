@@ -4,20 +4,20 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: bgd
+    app: {{DEVICE_NAME}}-{{DEVICE_ID}}-app
   name: {{DEVICE_NAME}}-{{DEVICE_ID}}-deployment
   namespace: device-apps
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bgd
+      app: {{DEVICE_NAME}}-{{DEVICE_ID}}-app
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: bgd
+        app: {{DEVICE_NAME}}-{{DEVICE_ID}}-app
     spec:
       containers:
       - image: quay.io/redhatworkshops/bgd:latest
