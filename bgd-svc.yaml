@@ -13,5 +13,5 @@ spec:
     protocol: TCP
     targetPort: 8080
   selector:
-    app: bgd
+    app: {{DEVICE_NAME}}-{{DEVICE_ID}}-app
 ---
