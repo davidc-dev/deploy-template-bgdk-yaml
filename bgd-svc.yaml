@@ -6,6 +6,7 @@ metadata:
   labels:
     app: bgd
   name: bgd
+  namespace: device-apps
 spec:
   ports:
   - port: 8080
