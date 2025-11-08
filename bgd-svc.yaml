@@ -5,7 +5,7 @@ metadata:
   creationTimestamp: null
   labels:
     app: bgd
-  name: {{DEVICE_NAME}}-{{DEVICE_ID}}-SERVICE
+  name: {{DEVICE_NAME}}-{{DEVICE_ID}}-service
   namespace: device-apps
 spec:
   ports:
