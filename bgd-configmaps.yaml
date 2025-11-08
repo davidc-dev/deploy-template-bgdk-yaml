@@ -3,6 +3,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: device-config
+  namespace: device-apps
 data:
   device.yaml: |
     device_id: {{DEVICE_ID}}
