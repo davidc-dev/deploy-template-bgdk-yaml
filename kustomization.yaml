@@ -3,3 +3,4 @@ resources:
 - bgd-configmaps.yaml
 - bgd-route.yaml
 - bgd-svc.yaml
+- bgd-pvc.yaml
