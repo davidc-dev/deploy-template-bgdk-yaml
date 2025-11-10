@@ -60,9 +60,7 @@ spec:
         - name: app-data
           persistentVolumeClaim:
             claimName: {{DEVICE_NAME}}-{{DEVICE_ID}}-pvc
-
         - name: nfs-seed
-          nfs:
-            server: 192.168.68.172
-            path: /data
+          persistentVolumeClaim:
+            claimName: nfs-seed
 ---
